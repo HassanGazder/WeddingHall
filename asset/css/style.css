@@ -7,30 +7,22 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 * {
   font-family: "Poppins", sans-serif;
 }
 
 :root {
-  --primary: #1f1a54;
+  --primary: #a08348;
   --secondary: #ed1c24;
   --yellow: #ffb72b;
   --bg-color: #e6e6e6;
   --sky-blue: #1697bb;
   --white: #ffffff;
   --black: #000;
-  --gray: #545557;
+  --gray: #3d3d3d;
 }
 
-.custom-btn {
-  background-color: var(--secondary);
-  color: var(--white);
-  border: 2px solid var(--secondary);
-  border-radius: 10px;
-  width: 150px;
-  height: 50px;
-}
+
 .back-to-top{
   z-index: 999;
   background-color: #0078FF;
@@ -57,10 +49,6 @@
 a {
   list-style: none;
 }
-.custom-btn:hover {
-  background-color: transparent;
-  color: var(--secondary);
-}
 @keyframes backgroundSlide {
   0% {
     background-image: url('../images/navbarbg.jpeg'); /* First image */
@@ -75,10 +63,10 @@ a {
     background-image: url('../images/navbg2.jpg'); /* Hold the second image */
   }
   76.66% {
-    background-image: url('../images/navbarbg.jpeg'); /* Third image */
+    background-image: url('../images/navbg3.jpg'); /* Third image */
   }
   100% {
-    background-image: url('../images/navbarbg.jpeg'); /* Hold the third image */
+    background-image: url('../images/navbg3.jpg'); /* Hold the third image */
   }
 }
 
@@ -87,28 +75,27 @@ a {
   background-position: top;
   background-size: cover;
   width: 100%;
-  height: 100vh;
+  height: 70vh;
   display: flex;
   align-items: flex-start;
-  animation: backgroundSlide 15s infinite; /* Adjust the total duration as needed */
-  animation-timing-function: ease-in-out; /* Smooth transition */
+  animation: backgroundSlide 15s infinite; 
+  animation-timing-function: ease-in-out; 
 }
 
 
 .navbar #nav-button {
-  background-color: var(--secondary);
+  background-color: var(--primary);
   color: var(--white);
-  border: 2px solid var(--secondary);
-  border-radius: 10px;
-  width: 150px;
-  height: 50px;
-  display: block;
-  margin: 0 auto;
+  width: 180px;
+  height: 40px;
+  font-size: 12px;
+  text-transform: uppercase;
 }
 
 .navbar #nav-button:hover {
-  background-color: transparent;
-  color: var(--secondary);
+  background-color: var(--gray);
+  color: var(--white);
+  transition: 0.5s;
 }
 
 .heading-h1 {
@@ -130,7 +117,6 @@ header {
   border-radius: 0 0 230px 0;
 }
 
-/* navbar css */
 .navbar .navbar-brand {
   font-weight: bold;
   color: var(--primary);
@@ -144,15 +130,17 @@ header {
 
 .navbar .nav-item .nav-link {
   color: var(--bg-color);
-  font-size: 20px;
+  font-size: 13px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .navbar .nav-item .nav-link:hover {
-  color: var(--black);
+  color: var(--white);
   transition: 0.4s;
+  background-color: var(--primary);
 }
-.navbar-center-text {
+/* .navbar-center-text {
   position: absolute;
   top: 50%; 
   left: 50%; 
@@ -163,10 +151,11 @@ header {
 }
 #nav-toggle ~ .navbar-center-text {
   top: 80%;
-}
+} */
 .navbar .navbar-nav {
   display: flex;
   justify-content: center;
+  gap: 15px;
   width: 100%;
   text-align: center;
 }
