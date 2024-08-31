@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --primary: #1f1a54;
+  --secondary: #ed1c24;
+  --yellow: #ffb72b;
+  --bg-color: #e6e6e6;
+  --sky-blue: #1697bb;
+  --white: #ffffff;
+  --black: #000;
+  --gray: #545557;
+}
+
+.custom-btn {
+  background-color: var(--secondary);
+  color: var(--white);
+  border: 2px solid var(--secondary);
+  border-radius: 10px;
+  width: 150px;
+  height: 50px;
+}
+.back-to-top{
+  z-index: 999;
+  background-color: #0078FF;
+  color: white;
+  border-radius: 100% 100%;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 20px;
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+}
+.back-to-top:hover{
+  background-color:#0067dd;
+  color: white;
+}
+.footer .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.footer p,
+a {
+  list-style: none;
+}
+.custom-btn:hover {
+  background-color: transparent;
+  color: var(--secondary);
+}
+@keyframes backgroundSlide {
+  0% {
+    background-image: url('../images/navbarbg.jpeg'); /* First image */
+  }
+  33.33% {
+    background-image: url('../images/navbarbg.jpeg'); /* Hold the first image */
+  }
+  38.33% {
+    background-image: url('../images/navbg2.jpg'); /* Second image */
+  }
+  71.66% {
+    background-image: url('../images/navbg2.jpg'); /* Hold the second image */
+  }
+  76.66% {
+    background-image: url('../images/navbarbg.jpeg'); /* Third image */
+  }
+  100% {
+    background-image: url('../images/navbarbg.jpeg'); /* Hold the third image */
+  }
+}
+
+.navbar {
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  animation: backgroundSlide 15s infinite; /* Adjust the total duration as needed */
+  animation-timing-function: ease-in-out; /* Smooth transition */
+}
+
+
+.navbar #nav-button {
+  background-color: var(--secondary);
+  color: var(--white);
+  border: 2px solid var(--secondary);
+  border-radius: 10px;
+  width: 150px;
+  height: 50px;
+  display: block;
+  margin: 0 auto;
+}
+
+.navbar #nav-button:hover {
+  background-color: transparent;
+  color: var(--secondary);
+}
+
+.heading-h1 {
+  color: var(--primary);
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.sub-heading {
+  color: var(--yellow);
+  font-weight: bold;
+  font-size: 25px;
+}
+
+header {
+  background-color: var(--bg-color);
+  min-height: 80vh;
+  padding-bottom: 20px;
+  border-radius: 0 0 230px 0;
+}
+
+/* navbar css */
+.navbar .navbar-brand {
+  font-weight: bold;
+  color: var(--primary);
+  font-size: 3rem;
+}
+
+.navbar .navbar-brand span {
+  color: var(--secondary);
+}
+
+
+.navbar .nav-item .nav-link {
+  color: var(--bg-color);
+  font-size: 20px;
+  text-align: center;
+}
+
+.navbar .nav-item .nav-link:hover {
+  color: var(--black);
+  transition: 0.4s;
+}
+.navbar-center-text {
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  text-align: center;
+  color: white; 
+  z-index: 1; 
+}
+#nav-toggle ~ .navbar-center-text {
+  top: 80%;
+}
+.navbar .navbar-nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+
+
+
+
