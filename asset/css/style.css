@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 *,
 *::after,
@@ -8,7 +8,7 @@
   box-sizing: border-box;
 }
 * {
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 :root {
@@ -51,22 +51,22 @@ a {
 }
 @keyframes backgroundSlide {
   0% {
-    background-image: url('../images/navbarbg.jpeg'); /* First image */
+    background-image: url('../images/navbarbg1.jpg'); /* First image */
   }
   33.33% {
-    background-image: url('../images/navbarbg.jpeg'); /* Hold the first image */
+    background-image: url('../images/navbarbg1.jpg'); /* Hold the first image */
   }
   38.33% {
-    background-image: url('../images/navbg2.jpg'); /* Second image */
+    background-image: url('../images/navbarbg2.jpg'); /* Second image */
   }
   71.66% {
-    background-image: url('../images/navbg2.jpg'); /* Hold the second image */
+    background-image: url('../images/navbarbg2.jpg'); /* Hold the second image */
   }
   76.66% {
-    background-image: url('../images/navbg3.jpg'); /* Third image */
+    background-image: url('../images/navbarbg3.jpeg'); /* Third image */
   }
   100% {
-    background-image: url('../images/navbg3.jpg'); /* Hold the third image */
+    background-image: url('../images/navbarbg3.jpeg'); /* Hold the third image */
   }
 }
 
@@ -75,7 +75,7 @@ a {
   background-position: top;
   background-size: cover;
   width: 100%;
-  height: 70vh;
+  height: 100vh;
   display: flex;
   align-items: flex-start;
   animation: backgroundSlide 15s infinite; 
@@ -130,14 +130,19 @@ header {
 
 .navbar .nav-item .nav-link {
   color: var(--bg-color);
-  font-size: 13px;
+  padding: 10px 20px; 
+  font-size: 11px;
   text-align: center;
   text-transform: uppercase;
+  /* margin: 10px; */
+  min-width: 100px;
+  transition: background-color 0.4s, color 0.4s;
+  display: inline-block;
+  font-family: Montserrat, sans-serif;
 }
 
 .navbar .nav-item .nav-link:hover {
   color: var(--white);
-  transition: 0.4s;
   background-color: var(--primary);
 }
 /* .navbar-center-text {

@@ -24,6 +24,14 @@
     function book(){
         window.location.href="booking.html"
     }
+    function button(){
+        let getli = document.getElementById("liforbutton");
+        console.log(getli)
+        let getbutton = document.getElementById("nav-button");
+        console.log(getbutton)
+        getli.append(getbutton)
+        console.log("click")
+    }
 </script>
 <body>
     <nav class="navbar navbar-expand-lg">
@@ -32,7 +40,7 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation" id="nav-toggle">
-                <i class="fa-solid fa-bars"></i>
+                <i onclick=button() class="fa-solid fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
@@ -48,8 +56,10 @@
                     <li class="nav-item">
                         <a class="nav-link" href="team.html">catering</a>
                     </li>
-                    </ul>
-                    <button onclick="book()" class="btn custom-btn" type="submit" id="nav-button">Book Your Event</button>
+                    <li id="liforbutton">
+                    </li>
+                    <button onclick="book()" class="btn" type="submit" id="nav-button">Book Your Event</button>
+                </ul>
             </div>
         </div>
     </nav>
