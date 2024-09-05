@@ -145,18 +145,6 @@ header {
   color: var(--white);
   background-color: var(--primary);
 }
-/* .navbar-center-text {
-  position: absolute;
-  top: 50%; 
-  left: 50%; 
-  transform: translate(-50%, -50%); 
-  text-align: center;
-  color: white; 
-  z-index: 1; 
-}
-#nav-toggle ~ .navbar-center-text {
-  top: 80%;
-} */
 .navbar .navbar-nav {
   display: flex;
   justify-content: center;
@@ -164,6 +152,33 @@ header {
   width: 100%;
   text-align: center;
 }
+/*navbar */
+
+/*our story  */
+.our-story{
+min-height: 500px;
+width: 65%;
+}
+.our-story .row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.our-story .content .heading p{
+color: var(--primary);
+font-size: 28px;
+}
+.our-story .content .para p{
+  font-size: 13px;
+  }
+.our-story .img img{
+  width: 100%;
+  height: 420px;
+  object-fit: contain;
+}
+/*our story  */
+
 
 
 
