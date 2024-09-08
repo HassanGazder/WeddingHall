@@ -75,13 +75,12 @@ a {
   background-position: top;
   background-size: cover;
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   align-items: flex-start;
-  animation: backgroundSlide 15s infinite; 
-  animation-timing-function: ease-in-out; 
+  animation: backgroundSlide 15s infinite;
+  animation-timing-function: ease-in-out;
 }
-
 
 .navbar #nav-button {
   background-color: var(--primary);
@@ -178,6 +177,47 @@ font-size: 28px;
   object-fit: contain;
 }
 /*our story  */
+/* wedding types */
+.wedding-type{
+  display: flex;
+  justify-content: center;
+}.wedding-type .heading {
+  font-size: 30px;
+  color: var(--primary);
+}
+.wedding-type .row .card{
+  border: none;
+  display: flex;
+  justify-content: flex-start;
+  height: 660px;
+  overflow: hidden;
+}
+.wedding-type .row .card .card-body{
+  background-color: #F8F7EF;
+}
+.wedding-type .row .card .card-body .card-title{
+  font-size: 22px;
+  color: var(--primary);
+}
+.wedding-type .row .card .card-body .card-text{
+  font-size: 12px;
+  font-family:"Montserrat", sans-serif ;
+  line-height: 25px;
+}
+.wedding-type .learn-more{
+  background-color: var(--primary);
+  color: var(--white);
+  width: 180px;
+  height: 40px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.wedding-type .learn-more:hover{
+  background-color: var(--gray);
+  color: var(--white);
+  transition: 0.5s;
+}
+/* wedding types */
 
 
 
