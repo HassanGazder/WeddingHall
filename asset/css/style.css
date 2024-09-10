@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 *,
 *::after,
@@ -22,10 +22,9 @@
   --gray: #3d3d3d;
 }
 
-
-.back-to-top{
+.back-to-top {
   z-index: 999;
-  background-color: #0078FF;
+  background-color: #0078ff;
   color: white;
   border-radius: 100% 100%;
   position: fixed;
@@ -36,8 +35,8 @@
   height: 40px;
   text-decoration: none;
 }
-.back-to-top:hover{
-  background-color:#0067dd;
+.back-to-top:hover {
+  background-color: #0067dd;
   color: white;
 }
 .footer .container-fluid {
@@ -51,22 +50,22 @@ a {
 }
 @keyframes backgroundSlide {
   0% {
-    background-image: url('../images/navbarbg1.jpg'); /* First image */
+    background-image: url("../images/navbarbg1.jpg"); /* First image */
   }
   33.33% {
-    background-image: url('../images/navbarbg1.jpg'); /* Hold the first image */
+    background-image: url("../images/navbarbg1.jpg"); /* Hold the first image */
   }
   38.33% {
-    background-image: url('../images/navbarbg2.jpg'); /* Second image */
+    background-image: url("../images/navbarbg.jpeg"); /* Second image */
   }
   71.66% {
-    background-image: url('../images/navbarbg2.jpg'); /* Hold the second image */
+    background-image: url("../images/navbarbg.jpeg"); /* Hold the second image */
   }
   76.66% {
-    background-image: url('../images/navbarbg3.jpeg'); /* Third image */
+    background-image: url("../images/navbarbg3.jpeg"); /* Third image */
   }
   100% {
-    background-image: url('../images/navbarbg3.jpeg'); /* Hold the third image */
+    background-image: url("../images/navbarbg3.jpeg"); /* Hold the third image */
   }
 }
 
@@ -126,10 +125,9 @@ header {
   color: var(--secondary);
 }
 
-
 .navbar .nav-item .nav-link {
   color: var(--bg-color);
-  padding: 10px 20px; 
+  padding: 10px 20px;
   font-size: 11px;
   text-align: center;
   text-transform: uppercase;
@@ -154,24 +152,24 @@ header {
 /*navbar */
 
 /*our story  */
-.our-story{
-min-height: 500px;
-width: 65%;
+.our-story {
+  min-height: 500px;
+  width: 65%;
 }
-.our-story .row{
+.our-story .row {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
-.our-story .content .heading p{
-color: var(--primary);
-font-size: 28px;
+.our-story .content .heading p {
+  color: var(--gray);
+  font-size: 25px;
+  font-weight: 500;
 }
-.our-story .content .para p{
+.our-story .content .para p {
   font-size: 13px;
-  }
-.our-story .img img{
+}
+.our-story .img img {
   width: 100%;
   height: 420px;
   object-fit: contain;
@@ -185,14 +183,15 @@ font-size: 28px;
 
 .wedding-type .heading {
   font-size: 30px;
-  color: var(--primary);
+  color: var(--gray);
+  font-weight: 500;
 }
 
 .wedding-type .row .card {
   border: none;
   display: flex;
   justify-content: flex-start;
-  height: 640px;
+  min-height: 640px;
   overflow: hidden;
 }
 
@@ -202,7 +201,7 @@ font-size: 28px;
 
 .wedding-type .row .card .card-body .card-title {
   font-size: 22px;
-  color: var(--primary);
+  color: var(--gray);
 }
 
 .wedding-type .row .card .card-body .card-text {
@@ -244,10 +243,20 @@ font-size: 28px;
 }
 /* wedding types */
 
+/* amenities */
+.amenities {
+  width: 100%;
+  min-height: 300px;
+  background-color: #f8f7ef;
+  margin-top: 5rem;
+}
+.amenities .heading{
+  padding-top: 1px;
+}
+.amenities .heading p{
+  font-weight: 500;
+  text-align: center;
+  margin-top: 5rem !important;
+}
 
-
-
-
-
-
-
+/* amenities */
